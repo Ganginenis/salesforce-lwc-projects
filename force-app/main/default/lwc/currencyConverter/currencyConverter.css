@@ -1,0 +1,102 @@
+/* .site-intro{
+	margin: auto;
+    align-content: center;
+    max-width: 800px;
+    background-color: darkslategray;
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 250px;
+    border-radius: 25px 
+}
+
+.intro-header{
+	padding: 5px;
+    font-size: 50px;
+    font-variant: all-small-caps;
+    font-family: fantasy;
+}
+
+.intro-desc{
+	font-size: 40px;
+    align-content: center;
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+} */
+
+/* .custom-card{
+	max-width: 250px;
+	margin-left: 20px;
+	background-color: antiquewhite;
+} */
+
+:host(){
+	--yellow : #f9ba49;
+	--dark-blue : #0b2451;
+	--light-blue:#1b96ff;
+	--orange: #fb8500;
+	--size-12 : 12px;
+	--size-16 : 16px;
+	--size-24 : 24px;
+}
+
+.custom-icon{
+	--slds-c-icon-color-foreground-default:var(--yellow);
+	--slds-c-icon-color-background:var(--yellow);
+	--slds-c-icon-color-foreground:var(--dark-blue);
+	transform: rotate(45deg);
+}
+
+.currency-app{
+	background:url(/sfsites/c/resource/currencyConverterAssets/currencyConverterAssets/currencyAppBackground.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: var(--size-16);
+}
+
+.custom-card{
+	max-width: 520px;
+    background: var(--dark-blue);
+    border-radius: 25px;
+	min-width: 370px;
+	padding: var(--size-16);
+}
+
+.slds-dropdown{
+	max-height: 200px;
+}
+
+.custom-button, .custom-button:hover, .custom-button:active{
+	background: var(--yellow);
+	color: var(--dark-blue);
+	padding: var(--size-12);
+	margin-top: var(--size-12);
+	font-size: var(--size-24);
+}
+
+.baseline{
+	align-items: baseline;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+.result{
+	font-size: var(--size-24);
+	margin-bottom: var(--size-24);
+	font-weight: bold;
+	color: var(--light-blue);
+}
+.result-to{
+	color: var(--orange);
+}

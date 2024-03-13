@@ -1,0 +1,61 @@
+<template>
+	<!-- <div class="site-intro">
+		<h1 class="intro-header">I am Under Development😍. Will see you soon...!!!</h1>
+		<div class="intro-desc">I am Currency Converter Application. I can display the results of converted currency.
+		</div>
+	</div> -->
+	<!-- <lightning-card title="Contact Info" class="slds-card">
+		<div class="custom-card">
+			<lightning-input label="Your Good Name: " type="text"></lightning-input>
+			<lightning-input label="Your Contact number: " type="number"></lightning-input>
+			<lightning-button type="submit" name="Submit" label="Submit" onclick={submitHandler}></lightning-button>
+		</div>
+	</lightning-card> -->
+
+	<!-- Actual Code Stars -->
+
+	<div class="currency-app">
+		<div class="container">
+			<div class="slds-card custom-card">
+				<form onsubmit={submitHandler}>
+					<h1
+						class="slds-text-heading_large slds-text-color_inverse slds-text-align_center slds-var-m-bottom_large">
+						Currency
+						Converter</h1>
+					<img src={currencyImage} alt="Currency Icon" height="150px" width="150px">
+
+					<lightning-input type="number" name="amount" label="Amount" placeholder="Amount"
+						variant="label-hidden" required class="slds-var-m-vertical_x-large"
+						onchange={changeHandler}></lightning-input>
+
+					<div class="slds-grid slds-gutters baseline slds-var-m-vertical_x-large">
+						<div class="slds-col">
+							<lightning-combobox name="countryFrom" label="From" value={countryFrom}
+								placeholder="Currency" options={countryList} onchange={changeHandler}
+								variant="label-hidden"></lightning-combobox>
+						</div>
+						<div class="slds-col slds-text-align_center">
+							<lightning-icon class="custom-icon" icon-name='action:change_record_type'
+								alternative-text='convert icon' size='small' title='Convert icon'></lightning-icon>
+						</div>
+						<div class="slds-col">
+							<lightning-combobox name="countryTo" label="To" value={countryTo} placeholder="Currency"
+								options={countryList} onchange={changeHandler}
+								variant="label-hidden"></lightning-combobox>
+						</div>
+					</div>
+					<div class="slds-text-align_center">
+						<template if:true={result}>
+							<div class="result">{amount} {countryFrom} = <span class="result-to">{result}
+									{countryTo}</span></div>
+						</template>
+						<template if:false={error}>
+							<div class="result">{error}</div>
+						</template>
+					</div>
+					<button type="submit" class="slds-button slds-button_stretch custom-button">Convert</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>
