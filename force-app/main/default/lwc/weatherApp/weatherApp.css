@@ -1,0 +1,129 @@
+:host(){
+	--yellow: #f9ba49;
+	--white:#ffffff;
+	--dark-blue:#091f43;
+	--font-size-8: 8px;
+	--font-size-12: 12px;
+	--font-size-16: 16px;
+	--font-size-24: 24px;
+}
+
+.app{
+	background: var(--dark-blue);
+	min-height: 100vh;
+}
+
+.app-card{
+	background: var(--white);
+    max-width: 400px;
+    min-width: 375px;
+    border-radius: var(--font-size-8);
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	font-size: 20px;
+    color: #091f43;
+    padding: var(--font-size-16);
+    border-bottom: 1px solid #ccc;
+}
+
+h1{
+	font-size: 28px;
+	font-weight: 500;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input{
+	text-align: center;
+	padding: var(--font-size-16);
+	height: 55px;
+	outline: none;
+	font-size: var(--font-size-24);
+	border-radius: var(--font-size-8);
+	border: 1px solid #ccc;
+}
+
+input::placeholder{
+	color: #bfbfbf;
+}
+
+.width100{
+	width: 100%;
+}
+
+button{
+	width: 100%;
+	background: var(--yellow);
+	height: 55px;
+	border: none;
+	outline: none;
+	font-size: var(--font-size-24);
+	border-radius: var(--font-size-8);
+	color: var(--dark-blue);
+}
+
+.success-msg{
+	color: #155724;
+	background: #d4edda;
+	border-radius: 5px;
+	padding: var(--font-size-12);
+	margin: var(--font-size-12);
+}
+
+.error-msg{
+	color: #721c24;
+	background: #f8d7da;
+	border-radius: 5px;
+	padding: var(--font-size-12);
+	margin: var(--font-size-12);
+}
+
+.text-center{
+	text-align: center;
+}
+.temperature{
+	font-size: 60px;
+	font-weight: 700;
+	line-height: normal;
+	padding-top: var(--font-size-24);
+}
+
+.description, .location{
+	font-size: var(--font-size-24);
+	line-height: 32px;
+	padding-top: 20px;
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+
+.feels_like{
+	width: 100%;
+	padding: var(--font-size-16);
+}
+
+.humidity{
+	border-left: 1px solid #ccc;
+	width: 100%;
+	padding: var(--font-size-16);
+}
+
+.weatherImg{
+	max-width: 125px;
+}
+
+.cursor{
+	cursor: pointer;
+	position: absolute;
+	margin-right: 300px;
+}

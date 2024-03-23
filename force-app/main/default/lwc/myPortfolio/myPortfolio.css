@@ -1,0 +1,30 @@
+.site-intro{
+	margin: auto;
+    align-content: center;
+    max-width: 600px;
+    background-color: darkslategray;
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 150px;
+    border-radius: 25px 
+}
+
+/* .site-intro:hover{
+	visibility: hidden;
+	opacity: 0;
+} */
+
+.intro-header{
+	padding: 5px;
+    font-size: 50px;
+    font-variant: all-small-caps;
+    font-family: fantasy;
+}
+
+.intro-desc{
+	font-size: 40px;
+    align-content: center;
+    padding: 10px;
+    font-family: cursive;
+    text-align: center;
+}
