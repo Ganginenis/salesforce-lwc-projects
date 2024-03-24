@@ -8,13 +8,17 @@
 	--font-12px: 12px;
 }
 .alarm-card{
-	max-width: 440px;
+	max-width: 350px;
+    min-width: 250px;
     width: 100%;
     padding: 30px;
     background: var(--dark-blue);
     color: var(--white);
     border-radius: var(--font-16px);
-    margin-left:60%;
+    /* max-height: 80vh; */
+    margin: auto;
+    position: relative;
+    /* margin-right: 20%; */
 }
 
 h1{
@@ -61,7 +65,9 @@ img{
 	background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
-    padding: 50px 50px 0px 250px;
+    align-items: center;
+    align-content: center;
+    /* padding: 50px 50px 0px 250px; */
 }
 
 img.shake {
